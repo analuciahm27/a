@@ -1,0 +1,151 @@
+int nEjercicio;
+            Console.WriteLine("Ingrese el numero del ejercicio 1-10 ");
+            nEjercicio=Convert.ToInt32(Console.ReadLine());
+           
+            switch (nEjercicio)
+            {
+                case 1:
+
+                    string nombre;
+                    Console.WriteLine("Ingresa tu nombre");
+                    nombre = Convert.ToString(Console.ReadLine());
+
+                    Console.WriteLine($"Bienvenidx {nombre}");
+
+                break;
+
+                case 2:
+
+                    double n1, n2, resultado;
+                    Console.WriteLine("Ingresa el primer numero ");
+                    n1 = int.Parse(Console.ReadLine());
+
+                    Console.WriteLine("Ingresa el segundo numero ");
+                    n2 = int.Parse(Console.ReadLine());
+
+                    resultado = (n1 + n2) * (n1 - n2);
+
+                    Console.WriteLine("El resultado es " + resultado);
+
+                 break;
+
+                 case 3:
+
+                    double producto, descuento, precioFinal;
+                    Console.WriteLine("Ingrese el precio del producto");
+                    producto = int.Parse(Console.ReadLine());
+
+                    descuento = producto * 0.6;
+
+                    precioFinal = producto - descuento;
+
+                    Console.WriteLine("El descuento es de " + descuento + " .El precio final seria de " + precioFinal);
+
+                 break;
+
+                 case 4:
+
+                    double ndolar, r;
+                    Console.WriteLine("Ingrese el valor a cambiar");
+                    ndolar = int.Parse(Console.ReadLine());
+
+                    r = ndolar * 3.78;
+                    Console.WriteLine($"Usted recibira {r} dolares");
+
+                 break;
+
+                 case 5:
+
+                    double D, d, re;
+
+                    Console.WriteLine("Ingrese el lado mayor ");
+                    D = int.Parse(Console.ReadLine());
+
+                    Console.WriteLine("Ingrese el lado menor ");
+                    d = int.Parse(Console.ReadLine());
+
+                    re = D * d / 2;
+
+                    Console.WriteLine("El area del rombo es de " + re);
+
+                 break;
+
+                 case 6:
+
+                    double sueldo, sFinal;
+                    Console.WriteLine("Ingrese su sueldo");
+                    sueldo = int.Parse(Console.ReadLine());
+
+                    sFinal = (sueldo * 0.25) + sueldo;
+
+                    Console.WriteLine("Su sueldo final seria de " + sFinal);
+
+                 break;
+
+                 case 7:
+
+                    int horas, minutos;
+                    Console.WriteLine("Ingrese el numero de horas a convertir ");
+                    horas = Convert.ToInt32(Console.ReadLine());
+
+                    minutos = horas * 60;
+
+                    Console.WriteLine(horas + " horas en minutos son " + minutos + " minutos");
+
+                 break;
+
+                 case 8:
+
+                    double sMaria, sFinalMaria, sJuan, sFinalJuan, sPatricio, sFinalPatricio;
+                    Console.WriteLine("Ingrese el sueldo de Maria ");
+                    sMaria = int.Parse(Console.ReadLine());
+
+                    Console.WriteLine("Ingrese el sueldo de Juan ");
+                    sJuan = int.Parse(Console.ReadLine());
+
+                    Console.WriteLine("Ingrese el sueldo de Patricia ");
+                    sPatricio = int.Parse(Console.ReadLine());
+
+                    sFinalMaria = sMaria - (sMaria * 0.05) - 25;
+                    sFinalJuan = sJuan + (sJuan * 0.23) + 72;
+                    sFinalPatricio = sPatricio + (sPatricio * 0.05) - 56;
+
+                    Console.WriteLine("El sueldo de Maria es " + sFinalMaria +
+                        " - El sueldo de Juan es " + sFinalJuan +
+                        " - El sueldo de Patricio es " + sFinalPatricio);
+
+                    break;
+
+                 case 9:
+
+                    double km, metros, pulgadas, pies;
+                    Console.WriteLine("Ingrese la cantidad de kilometros a convertir");
+                    km = int.Parse(Console.ReadLine());
+
+                    metros = km * 1000;
+                    pies = km * 3280;
+                    pulgadas = km * 39370;
+
+                    Console.WriteLine($"{km} kilometros es igual a {metros} metros - {pies} pies - {pulgadas} pulgadas.");
+
+                  break;
+
+                 case 10:
+
+                    string n;
+                    int aNacimiento, edad;
+                    Console.WriteLine("Ingresa tu nombre");
+                    n = Convert.ToString(Console.ReadLine());
+
+                    Console.WriteLine("Ingresa tu año de nacimiento");
+                    aNacimiento = Convert.ToInt32(Console.ReadLine());
+
+                    edad = 2023 - aNacimiento;
+
+                    Console.WriteLine($"{n} tienes {edad} años");
+
+                  break;
+
+                default:
+                    Console.WriteLine("Ingrese un numero valido");
+                break;
